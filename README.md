@@ -1,6 +1,6 @@
-# SimpleEncryptor and Cipher
+# SimpleEncryptor
 
-This file contains two encryption classes: `SimpleEncryptor` (basic XOR-based cipher) and `Cipher` (more complex cipher with multiple rounds).
+This file contains a single encryption class: `SimpleEncryptor` (basic XOR-based cipher).
 
 ## Overview
 
@@ -11,11 +11,6 @@ A lightweight symmetric encryption class that:
 - Applies XOR operations for encryption/decryption
 - Outputs ciphertext in hexadecimal format
 
-### Cipher
-A more complex symmetric encryption class that:
-- Uses multiple rounds of XOR, blending, and scrambling
-- Processes 16-byte blocks with dynamic key matrices
-- Includes bit rotation and matrix operations for better diffusion
 
 ## Features
 - **Block-based encryption**: Both classes process data in 16-byte blocks
@@ -28,7 +23,6 @@ A more complex symmetric encryption class that:
 ## Usage
 
 ### SimpleEncryptor
-```python
 encryptor = SimpleEncryptor("HELLO")
 plaintext = "THIS IS A VERY LONG MESSAGE TO ENCRYPT"
 ciphertext = encryptor.encrypt(plaintext)
@@ -43,8 +37,7 @@ decrypted = encryptor.decrypt(ciphertext)
 - **Performance**: Not optimized for large data volumes
 
 ## Requirements
-
-- Python 3.x
+- **SimpleEncryptor**: Lacks diffusion, vulnerable to known-plaintext attacks
 - No external dependencies
 
 ## License
