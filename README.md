@@ -23,6 +23,7 @@ A lightweight symmetric encryption class that:
 ## Usage
 
 ### SimpleEncryptor
+```python
 encryptor = SimpleEncryptor("HELLO")
 plaintext = "THIS IS A VERY LONG MESSAGE TO ENCRYPT"
 ciphertext = encryptor.encrypt(plaintext)
