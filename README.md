@@ -1,4 +1,3 @@
-"""
 # SimpleEncryptor and Cipher
 
 This file contains two encryption classes: `SimpleEncryptor` (basic XOR-based cipher) and `Cipher` (more complex cipher with multiple rounds).
